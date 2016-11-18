@@ -1,22 +1,37 @@
 <div class="main">
     <div class="input-row">
         <label for="text">text:</label>
-        <input type="text" name="text" data-input value="hey!">
+        <input type="text" id="text" data-input>
     </div>
 
     <div class="input-row">
-        <label for="text">font character:</label>
-        <input type="text" name="text" placeholder=":frog:" data-char>
+        <label for="char">font character:</label>
+        <input type="text" id="char" placeholder=":frog:" data-char>
     </div>
 
     <div class="input-row">
-        <label for="text">filler:</label>
-        <input type="text" name="text" placeholder=":white_large_square:" data-filler>
+        <label for="filler">filler:</label>
+        <input type="text" id="filler" placeholder=":white_large_square:" data-filler>
+    </div>
+
+    <div class="input-row radio">
+        <label class="radio-label">
+            Horizontal: <input type="radio" name="layout" value="horizontal" checked="checked">
+        </label>
+        <label class="radio-label">
+            Vertical: <input type="radio" name="layout" value="vertical">
+        </label>
     </div>
 
     <div class="button-holder">
         <button class="go-button" data-go>do it!</button>
     </div>
 
-    <textarea class="output" data-output></textarea>
+    <textarea class="output" data-output>
+X   X XXXXX X   X   X
+X   X X     X   X   X
+XXXXX XXX    XXX    X
+X   X X       X
+X   X XXXXX   X     X
+    </textarea>
 </div>
