@@ -87,6 +87,7 @@
 	            const bigBoy = font[c];
 
 	            if (!bigBoy || bigBoy.length !== 5) {
+	                window.alert(`sorry, this doesn't support the character "${c}"`);
 	                throw `Hey! "${c}" is missing from the font, or it's invalid.`;
 	            }
 
